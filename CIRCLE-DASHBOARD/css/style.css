@@ -1,0 +1,15 @@
+.box-main-circle {
+  width: 75px;
+  height: 75px;
+  border: 10px solid green;
+  border-width: 10px!important;
+  box-sizing: border-box;
+}
+
+.box-circle svg circle{
+  fill: none;
+  stroke: orange;
+  stroke-width: 15;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}

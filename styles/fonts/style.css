@@ -1,0 +1,114 @@
+/* ============== FONT-SIZE ============== */
+.fsize-1 {
+  font-size: 0.25rem;
+}
+
+.fsize-2 {
+  font-size: 0.5rem;
+}
+
+.fsize-3 {
+  font-size: 0.75rem;
+}
+
+.fsize-4 {
+  font-size: 1rem;
+}
+
+.fsize-5 {
+  font-size: 1.25rem;
+}
+
+.fsize-6 {
+  font-size: 1.5rem;
+}
+
+.fsize-7 {
+  font-size: 1.75rem;
+}
+
+.fsize-8 {
+  font-size: 2rem;
+}
+
+.fsize-9 {
+  font-size: 2.25rem;
+}
+
+.fsize-10 {
+  font-size: 2.5rem;
+}
+
+.fsize-medium {
+  font-size: medium;
+}
+
+.fsize-xx-small {
+  font-size: xx-small;
+}
+
+.fsize-x-small {
+  font-size: x-small;
+}
+
+.fsize-small {
+  font-size: small;
+}
+
+.fsize-large {
+  font-size: large;
+}
+
+.fsize-x-large {
+  font-size: x-large;
+}
+
+.fsize-xx-large {
+  font-size: xx-large;
+}
+
+.fsize-smaller {
+  font-size: smaller;
+}
+
+.fsize-larger {
+  font-size: larger;
+}
+
+/* ============== FONT-STYLE ============== */
+.fstyle-normal {
+  font-style: normal;
+}
+
+.fstyle-italic {
+  font-style: italic;
+}
+
+.fstyle-oblique {
+  font-style: oblique;
+}
+
+/* ============== FONT-WEIGHT ============== */
+.fweight-normal {
+  font-weight: normal;
+}
+
+.fweight-bold {
+  font-weight: bold;
+}
+
+.fweight-bolder {
+  font-weight: bolder;
+}
+
+.fweight-lighter {
+  font-weight: lighter;
+}
+
+.fweight-100 {
+  font-weight: 100;
+}
+
+.fweight-900 {
+  font-weight: 900;
+}/*# sourceMappingURL=style.css.map */
