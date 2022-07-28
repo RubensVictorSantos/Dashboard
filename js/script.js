@@ -1,4 +1,4 @@
-// Quando carregar a página 
+ // Quando carregar a página 
 $(document).ready(function () {
     // Função 'onClick' do btn_carregar
     $("#btn_carregar").on("click", function (e) {
@@ -12,6 +12,7 @@ $(document).ready(function () {
     });
 
     let deals = document.getElementsByClassName("deals-status");
+    let donutText = document.getElementsByClassName("donut-text");
     var chart1 = document.getElementById("chart1");
     var chart2 = document.getElementById("chart2");
     var chart3 = document.getElementById("chart3");
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
     let c = (c3.getAttribute('r') * 2) * 3.14;
 
-    let numbers = [Math.ceil(Math.random() * 10), Math.ceil(Math.random() * 10), Math.ceil(Math.random() * 10)]
+    let numbers = [Math.ceil(Math.random() * 1000), Math.ceil(Math.random() * 1000), Math.ceil(Math.random() * 1000)]
     let sum = 0;
 
     for (let i = 0; i < numbers.length; i++) {
@@ -35,19 +36,11 @@ $(document).ready(function () {
         return c - (t-10)
     });
 
-    console.log(dashoffset);
+    deals[0].innerHTML = `${numbers[0]}`;
+    deals[1].innerHTML = `${numbers[1]}`;
+    deals[2].innerHTML = `${numbers[2]}`;
 
-    let t = 0;
-
-    for (let i = 0; i < dashoffset.length; i++) {
-        t += dashoffset[i];
-    }
-
-    console.log(t);
-
-    deals[0].innerHTML = `${Math.floor(dashoffset[0])}`;
-    deals[1].innerHTML = `${Math.floor(dashoffset[1])}`;
-    deals[2].innerHTML = `${Math.floor(dashoffset[2])}`;
+    donutText[0].innerHTML = `${sum}`;
 
     c1.setAttribute('stroke-dashoffset', dashoffset[0])
     c2.setAttribute('stroke-dashoffset', dashoffset[1])
@@ -57,13 +50,23 @@ $(document).ready(function () {
     c2.setAttribute('stroke-dasharray', c)
     c3.setAttribute('stroke-dasharray', c)
 
-    let rotate = dashoffset.map(value => (value * 360) / c)
+    let total = 0;
 
-    // console.log(rotate)
+    for (let i = 0; i < dashoffset.length; i++) {
+        total += dashoffset[i];
+    }
 
-    // chart2.style.transform = `rotate(${-rotate[0]}deg)`
+    let rotate = dashoffset.map(value => { 
+        let a = (value * 100) / total
+        let b = (a / 100) * 360;
+
+        return b
+    })
+
+    console.log(rotate);
+    console.log(dashoffset);
+
+    // chart1.style.transform = `rotate(${-360}deg)`
     // chart3.style.transform = `rotate(${-rotate[1]}deg)`
-
-    // console.log(numbers+`\n`+dashoffset+`\n`+rotate);
 
 });

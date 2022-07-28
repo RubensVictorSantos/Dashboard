@@ -1308,4 +1308,12 @@ input[type=button] {
 .chart3 {
   transform: rotate(0deg);
   transform-origin: center;
+}
+
+.donut-text {
+  fill: #34323a;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=style.css.map */
