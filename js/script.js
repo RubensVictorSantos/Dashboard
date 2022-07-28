@@ -57,13 +57,11 @@ $(document).ready(function () {
     c2.setAttribute('stroke-dasharray', c)
     c3.setAttribute('stroke-dasharray', c)
 
-    let rotate = dashoffset.map(value => (value * 360) / c)
+    let rotate = numbers.map(value => (value * 360) / c)
 
-    // console.log(rotate)
+    chart2.style.transform = `rotate(${rotate[1]}deg)`
+    chart3.style.transform = `rotate(${rotate[2]}deg)`
 
-    // chart2.style.transform = `rotate(${-rotate[0]}deg)`
-    // chart3.style.transform = `rotate(${-rotate[1]}deg)`
-
-    // console.log(numbers+`\n`+dashoffset+`\n`+rotate);
+    console.log(numbers+`\n`+dashoffset+`\n`+rotate);
 
 });
