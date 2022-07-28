@@ -1,0 +1,337 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/fonts/style.css" />
+</head>
+
+<body class="">
+    <header class="">
+        <nav
+            class="d-flex justify-content-around align-items-center bg-white border-b1 border-gray navbar-top position-sticky">
+            <button class="bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
+                </svg>
+            </button>
+            <ul class="menu-vertical">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Opportunities</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Pipeline</a></li>
+                <li><a href="#">Documents</a></li>
+            </ul>
+            <div class="box-settings d-flex align-items-center">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="btn-bell"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                    </svg>
+                </a>
+                <div class="profile-field">
+                    <label for="open-profile">
+                        <img class="avatar" src="./image/profile/20190214_072515.jpg" alt="Profile's image" />
+                    </label>
+                    <button id="open-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <section class="d-grid sec">
+
+        <!-- ================ Overview ================ -->
+        <div class="bg-white bg-white border-around border1 border-gray">
+            <div class="container-header d-flex justify-content-between align-items-center">
+                Overview
+
+                <ul class="menu-option">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-blue-theme" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                        </svg>
+                        <span>All Time</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-body">
+                <div class="container-title pb0">
+                    Docs in Pipeline
+                </div>
+                <div class="d-flex p4">
+                    <div class="w50">
+                        <div class="d-flex align-items-center pb4">
+                            <div class="avatar icon-primary d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                    <path
+                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h1 class="fsize-xx-large">1,884</h1>
+                                <p class="fsize-smaller fweight-bold text-blue-theme1">$924,883.00</p>
+                            </div>
+                        </div>
+                        <div class="toolbar-docs d-flex pl4 pt4">
+                            <input type="radio" id="rd-quotes" name="rd-docs" />
+                            <label for="rd-quotes"
+                                class="d-flex justify-content-center align-items-center p2 flex-column">
+                                <h4>732</h4>
+                                <p>Quotes</p>
+                            </label>
+
+                            <input type="radio" id="rd-sla" name="rd-docs" />
+                            <label for="rd-sla" class="d-flex justify-content-center align-items-center p2 flex-column">
+                                <h4>313</h4>
+                                <p>SLA</p>
+                            </label>
+
+                            <input type="radio" id="rd-sow" name="rd-docs" />
+                            <label for="rd-sow" class="d-flex justify-content-center align-items-center p2 flex-column">
+                                <h4>464</h4>
+                                <p>SOW</p>
+                            </label>
+
+                            <input type="radio" id="rd-msa" name="rd-docs" />
+                            <label for="rd-msa" class="d-flex justify-content-center align-items-center p2 flex-column">
+                                <h4>665</h4>
+                                <p>MSA</p>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="container-wrapper">
+                        <div>
+                            <h3>623</h3>
+                            <p class="fsize-smaller fweight-bold text-blue-theme1 mb3">
+                                $823,993
+                            </p>
+                            <span class="bedge-pill-info fsize-x-small fweight-bold border-radius">
+                                Drafts
+                            </span>
+                        </div>
+                        <div>
+                            <h3>423</h3>
+                            <p class="fsize-smaller fweight-bold text-blue-theme1 mb3">
+                                $133,311
+                            </p>
+                            <span class="bedge-pill-attention fsize-x-small fweight-bold border-radius">
+                                Pending Approval
+                            </span>
+                        </div>
+                        <div>
+                            <h3>499</h3>
+                            <p class="fsize-smaller fweight-bold text-blue-theme1 mb3">
+                                $102,333
+                            </p>
+                            <span class="bedge-pill-primary fsize-x-small fweight-bold border-radius">
+                                Sent To Client
+                            </span>
+                        </div>
+                        <div>
+                            <h3>243</h3>
+                            <p class="fsize-smaller fweight-bold text-blue-theme1 mb3">
+                                $322,333
+                            </p>
+                            <span class="bedge-pill-success fsize-x-small fweight-bolder border-radius">
+                                Singining
+                            </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container-footer p4">
+                <div class="w50 d-flex justify-content-around border-r1 border-gray">
+                    <div class="">
+                        <h6 class="pb2 text-blue-theme1 fsize-small ">
+                            Net Value in Pipeline
+                        </h6>
+                        <p class="fsize-large">$924,883</p>
+                    </div>
+                    <div class="">
+                        <h6 class="pb2 text-blue-theme1 fsize-small">Achieved So Far</h6>
+                        <p class="fsize-large">$424,393</p>
+                    </div>
+                </div>
+                <div class="w50 d-flex justify-content-around">
+                    <div class="">
+                        <h6 class="pb2 text-blue-theme1 fsize-small">Difference</h6>
+                        <p class="fsize-large text-warning">$135,232</p>
+                    </div>
+                    <div class="">
+                        <h6 class="pb2 text-blue-theme1 fsize-small">Target</h6>
+                        <p class="fsize-large">$2,000,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border-around border1 border-gray">
+            <div class="container-header d-flex justify-content-between align-items-center">
+                High Value Deals
+
+                <ul class="menu-option">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-blue-theme" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                        </svg>
+                        <span>All Time</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-body">
+
+            </div>
+        </div>
+    </section>
+    <section class="d-grid sec">
+        <div class="w75 bg-white border-around border1 border-gray">
+            <div class="container-header d-flex justify-content-between align-items-center">
+                Opportunity Index
+
+                <ul class="menu-option">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-blue-theme" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                        </svg>
+                        <span>All Time</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-body">
+                <div class="d-flex flex-column justify-content-center align-items-center p4">
+
+                    <!-- GRAPH -->
+                    <div class="graph">
+                        <svg class="fundo chart1" id="chart1">
+                            <circle stroke="#5fd8e4" stroke-linecap="round" id="c1" cx="100" cy="100" r="60" />
+                        </svg>
+
+                        <svg class="fundo chart2" id="chart2">
+                            <circle stroke="#5967ff" stroke-linecap="round" id="c2" cx="100" cy="100" r="60" />
+                        </svg>
+
+                        <svg class="fundo chart3" id="chart3">
+                            <circle stroke="#ebebeb" stroke-linecap="round" id="c3" cx="100" cy="100" r="60" />
+                            <g>
+                                <text y="50%">
+                                    <tspan x="50%" text-anchor="middle" class="donut-text"></tspan>
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex justify-content-around align-items-center p4">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="pb2 deals-status">243</h3>
+                        <span class="bedge-pill-info fsize-x-small fweight-bolder border-radius">
+                            Deals Wan
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="pb2 deals-status">243</h3>
+                        <span class="bedge-pill-primary fsize-x-small fweight-bolder border-radius">
+                            In Progress
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h3 class="pb2 deals-status">243</h3>
+                        <span class="bedge-pill-dark-gray fsize-x-small fweight-bolder border-radius">
+                            Deals Lost
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- oooooooooooooooooooooooooooooooooo -->
+        <div class="w100 bg-white border-around border1 border-gray">
+            <div class="container-header d-flex justify-content-between align-items-center">
+                Opportunity Index
+
+                <ul class="menu-option">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="text-blue-theme" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                        </svg>
+                        <span>All Time</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-body">
+
+            </div>
+            <div class="container-footer">
+
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

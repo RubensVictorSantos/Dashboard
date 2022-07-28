@@ -1,0 +1,22 @@
+@import 'maps'
+
+/* ============== FONT-SIZE ============== */
+@for $i from 1 through 10
+    $i: $i * 0.25
+
+    .fsize-#{$i * 4}
+        font-size: #{$i + 'rem'}
+
+@each $name, $value in $map-fsize
+    .fsize-#{$name}
+        font-size: $value
+
+/* ============== FONT-STYLE ============== */
+@each $name, $value in $map-fstyle
+    .fstyle-#{$name}
+        font-style: $value
+
+/* ============== FONT-WEIGHT ============== */
+@each $name, $value in $map-fweight
+    .fweight-#{$name}
+        font-weight: $value
