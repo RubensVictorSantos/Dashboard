@@ -19,6 +19,7 @@ $(document).ready(function () {
     var c1 = document.getElementById("c1");
     var c2 = document.getElementById("c2");
     var c3 = document.getElementById("c3");
+    var btnPercent = document.getElementById("btn-percent");
 
     let c = (c3.getAttribute('r') * 2) * 3.14;
 

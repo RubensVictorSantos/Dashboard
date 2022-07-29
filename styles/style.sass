@@ -91,7 +91,7 @@ input[type="button"]
 
 /* ============== SHADOW ============== */
 .shadow
-    box-shadow: 0 0 10px 5px rgba(190,190,200, .5)
+    box-shadow: 0 3px 2px 0px rgba(180,180,200, .2)
 
 .container-wrapper
     display: grid
@@ -109,8 +109,11 @@ input[type="button"]
     .border-#{$name}
         border-color: $cor !important
 
+.bg-transparent
+    background-color: transparent
+
 /* ============== BORDER ============== */
-@for $i from 1 through 5
+@for $i from 0 through 5
 
     .border#{$i}
         border: $i + px solid black
@@ -128,7 +131,7 @@ input[type="button"]
         border-right: $i + px solid black
 
 .border-around
-    border-radius: 4px
+    border-radius: 8px
 
 .border-circle
     border-radius: 50%
@@ -200,10 +203,10 @@ input[type="button"]
         margin-right: $i + rem !important
 
 .ml-auto
-    margin-left: auto   
+    margin-left: auto
 
 .mr-auto
-    margin-right: auto   
+    margin-right: auto
 
 .m-auto
     margin: 0 auto
@@ -273,19 +276,39 @@ input[type="button"]
         border-bottom: 1px solid #f1eaf7
 
         .menu-option
+            border: 1px solid #f1eaf7
+            background-color: #fdfcfc
+            border-radius: 8px
+
             li
-                display: flex
-                align-items: center
-                justify-content: center
                 font-weight: bold
                 font-size: .8rem
-                border: 1px solid #f1eaf7
-                background-color: #fdfcfc
                 padding: .7rem .8rem
-                border-radius: 4px
 
-            span
-                padding: 0 1rem
+                input
+                    width: 120px
+                    overflow: hidden
+                    margin: .2rem 0 .5rem 0
+                    padding-bottom: 3px
+                    outline: none
+                    border-bottom: 2px solid #f5f5f5
+                    // text-align: center
+
+                    &:focus, &:hover
+                        border-bottom: 2px solid #f1eaf7
+
+                    &[type="date"]
+
+                        &::-webkit-calendar-picker-indicator
+                            display: none
+
+    li:first-child
+        display: flex
+        align-items: center
+        justify-content: center
+
+        span
+            padding: 0 1rem
 
     .container-body
         border-bottom: 1px solid #f1eaf7
@@ -351,7 +374,7 @@ input[type="button"]
     top: 0
     left: 0
     fill: transparent
-    stroke-width: 8px
+    stroke-width: 7px
 
 .chart1
     transform: rotate(0deg)
@@ -371,4 +394,3 @@ input[type="button"]
     line-height: 1
     font-weight: bold
     font-family: Arial, Helvetica, sans-serif
-
