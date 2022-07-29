@@ -763,6 +763,14 @@ input[type=button] {
   margin-right: 2.5rem !important;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 .m-auto {
   margin: 0 auto;
 }

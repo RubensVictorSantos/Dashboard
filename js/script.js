@@ -46,10 +46,11 @@ $(document).ready(function () {
 
     let rotate = calcrotate(numbers);
 
-    chart1.style.transform = `rotate(${rotate[1]}deg)`;
+    chart1.style.transform = `rotate(${rotate[1]+rotate[2]}deg)`;
     chart2.style.transform = `rotate(${rotate[2]}deg)`;
 
     /** ============================== ROTATE ================================== */
+    /** Consegui Caralho!!!!!!!!!!!!!!!  */
     function calcrotate(dashoffset) {
         let total = 0;
 
@@ -58,7 +59,6 @@ $(document).ready(function () {
         return dashoffset.map(value => {
             let a = (value * 100) / total //procentagem dashoffset
             let b = (a / 100) * 360;      //
-            console.log("Graus: " + b + "° = " + "tamanho em porcentagem: " + a);
 
             return b
         });
