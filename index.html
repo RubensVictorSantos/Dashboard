@@ -241,33 +241,37 @@
     </section>
     <section class="d-grid sec">
         <!-- ================ Opportunity Index ================ -->
-        <div class="w50 bg-white border-around border1 border-gray shadow">
+        <div class="w75 bg-white border-around border1 border-gray shadow">
             <div class="container-header d-flex justify-content-between align-items-center">
                 <h4 class="fsize-large fweight-normal">Opportunity Index</h4>
 
                 <ul class="menu-option">
-                    <li>
-
-                        <!-- Icon calendar-->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="text-primary" viewBox="0 0 16 16">
-                            <path
-                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
-                        </svg>
-
-                        <span>All Time</span>
-
-                        <button class="btn-">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
-                                viewBox="0 0 16 16">
+                    <li class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <!-- Icon calendar-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="text-primary" viewBox="0 0 16 16">
                                 <path
-                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
                             </svg>
-                        </button>
-                    </li>
-                    <li class="d-flex flex-column">
-                        <input type="text" min="2022-01-01" class="border0" placeholder="Data inicial"  autocomplete="off" onblur="(this.type = 'text')" onfocus="(this.type = 'date')"/>
-                        <input type="text" min="2022-01-01" class="border0" placeholder="Data final"    autocomplete="off" onblur="(this.type = 'text')" onfocus="(this.type = 'date')"/>
+
+                            <span>All Time</span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class=""
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                          
+                        </div>
+                        <!-- <ul>
+                            <li class="d-flex flex-column">
+                                <input type="text" min="2022-01-01" class="border0" placeholder="Data inicial"
+                                    autocomplete="off" onblur="(this.type = 'text')" onfocus="(this.type = 'date')" />
+                                <input type="text" min="2022-01-01" class="border0" placeholder="Data final" autocomplete="off"
+                                    onblur="(this.type = 'text')" onfocus="(this.type = 'date')" />
+                            </li>
+                        </ul> -->
                     </li>
                 </ul>
             </div>
