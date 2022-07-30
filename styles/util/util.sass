@@ -1,0 +1,181 @@
+@import 'maps'
+@charset "UTF-8"
+
+/* ============== WIDTH ============== */
+@for $i from 1 through 4
+    $i: $i * 25
+
+    .w#{$i}
+        width: #{$i + '%'}
+
+/* ============== MARGIN ============== */
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .m#{$i * 4}
+        margin: $i + rem !important
+
+/*-------- Margin Top*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .mt#{$i * 4}
+        margin-top: $i + rem !important
+
+/*-------- Margin Bottom*/     
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .mb#{$i * 4}
+        margin-bottom: $i + rem !important
+
+/*-------- Margin Left*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .ml#{$i * 4}
+        margin-left: $i + rem !important
+
+/*-------- Margin Right*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .mr#{$i * 4}
+        margin-right: $i + rem !important
+
+.ml-auto
+    margin-left: auto
+
+.mr-auto
+    margin-right: auto
+
+.m-auto
+    margin: 0 auto
+
+/* ============== PADDING ============== */
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .p#{$i * 4}
+        padding: $i + rem !important
+
+/*-------- Padding Top*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .pt#{$i * 4}
+        padding-top: $i + rem !important
+
+/*-------- Padding Bottom*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .pb#{$i * 4}
+        padding-bottom: $i + rem !important
+
+/*-------- Padding Left*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .pl#{$i * 4}
+        padding-left: $i + rem !important
+
+/*-------- Padding Right*/
+@for $i from 0 through 10
+    $i: $i * 0.25
+    .pr#{$i * 4}
+        padding-right: $i + rem !important
+
+/* ============== DISPLAY ============== */
+@each $name, $type in $map-display
+    .d-#{$name}
+        display: $type
+
+/* -------- Justify Content */
+@each $name, $type in $map-justify-content
+    .justify-content-#{$name}
+        justify-content: $type
+
+/* -------- Aling Items */
+@each $name, $type in $map-align-items
+    .align-items-#{$name}
+        align-items: $type
+
+/* -------- Flex Direction */
+@each $name, $value in $map-flex-direction
+    .flex-#{$name}
+        flex-direction: $value
+
+/* ============== CONTAINER WRAPPER ==============*/
+.container-wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(auto-fill, 50%)
+    grid-gap: 1rem
+
+/* -------- Grid Column */
+@for $i from 1 through 12
+    .col-start#{$i}
+        grid-column-start: #{$i}
+
+    .col-end#{$i}
+        grid-column-end: span #{$i}
+
+/* -------- Grid Row */
+@for $i from 1 through 12
+    .row-start#{$i}
+        grid-column-start: #{$i}
+
+    .row-end#{$i}
+        grid-column-end: span #{$i}
+
+/* ============== POSITION ============== */
+@each $name, $value in $map-position
+    .position-#{$name}
+        position: $value
+
+/* ============== CORES ==============*/
+@each $name, $cor in $map-color
+    .text-#{$name}
+        color: $cor !important
+        
+@each $name, $cor in $map-color
+    .bg-#{$name}
+        background-color: $cor !important
+
+@each $name, $cor in $map-color
+    .border-#{$name}
+        border-color: $cor !important
+
+.bg-transparent
+    background-color: transparent
+
+/* ============== ICON ============== */
+@each $name, $value in $map-color
+    .icon-#{$name}
+        color: $value !important
+        background-color: #{$value}3f !important
+
+/* ============== BORDER ============== */
+@for $i from 0 through 5
+
+    .border#{$i}
+        border: $i + px solid black
+
+    .border-t#{$i}
+        border-top: $i + px solid black
+
+    .border-b#{$i}
+        border-bottom: $i + px solid black
+
+    .border-l#{$i}
+        border-left: $i + px solid black
+
+    .border-r#{$i}
+        border-right: $i + px solid black
+
+.border-around
+    border-radius: 8px
+
+.border-circle
+    border-radius: 50%
+
+/* ============== BEDGE-FILL ============== */
+@each $name, $value in $map-color
+    .bedge-pill-#{$name}
+        padding: .2rem .4rem .2rem .4rem
+        border-radius: 7px
+        background-color: #{$value}3f !important
+        color: $value !important
+        vertical-align: middle
